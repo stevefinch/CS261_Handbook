@@ -24,7 +24,7 @@ item of data.
 * [Tuple](tuple.md)
 * [Linked List](linked_list.md)
 * [Tree](tree.md)
-* [Heap](heap.md)
+* [Binary Heap](heap.md)
 * [Priority Queue](priority_queue.md)
 * [Hash Table](hast_table.md)
 * [Graph](graph.md)

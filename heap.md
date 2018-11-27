@@ -1,6 +1,6 @@
 # Heap
 
-An heap is \[describe in very simple terms\].
+A binary heap is \[describe in very simple terms\].
 
 # In Memory
 
@@ -27,9 +27,9 @@ It is not as good as \[what] \[why].
 # Example
 
 ```
-sample code showing creation, and exercising all of the operations
-or
-a program that doesn't use the structure, and then a version that does
+bh = BinaryHeap()
+bh.getMin()           # remove and return the minimum value (the root) from the heap (getMax returns max if it is a MaxHeap)
+bh.insert(17)         # add the value 17 to the heap
 ```
 
 (c) 2018 STEVE FINCH. All rights reserved.

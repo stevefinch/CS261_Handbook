@@ -30,8 +30,8 @@ It is not as good as \[what] \[why].
 d = Deque()
 d.append(1)           # put the value 1 at the end of the deque
 d.appendleft(2)       # put the value 2 at the beginning of the deque
-d.pop()               # return and remove the value at the end of the deque 
-d.popleft()       # return and remove the value at the beginning of the deque
+d.pop()               # remove and return the value at the end of the deque 
+d.popleft()           # remove abd return the value at the beginning of the deque
 ```
 
 (c) 2018 STEVE FINCH. All rights reserved.

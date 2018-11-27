@@ -29,7 +29,7 @@ It is not as good as \[what] \[why].
 ```
 q = Queue()
 q.enqueue(7)          # place the value 7 in the queue
-q.dequeue(7)          # return and remove the oldest value from the queue
+q.dequeue(7)          # remove and return the oldest value from the queue
 ```
 
 (c) 2018 STEVE FINCH. All rights reserved.

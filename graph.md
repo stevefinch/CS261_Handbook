@@ -27,9 +27,14 @@ It is not as good as \[what] \[why].
 # Example
 
 ```
-sample code showing creation, and exercising all of the operations
-or
-a program that doesn't use the structure, and then a version that does
+g = Graph()
+g.addVertex('aaa')          # add a node with value 'aaa' to the graph
+g.addEdge('aaa, 'bbb')      # add an edge between vertices 'aaa' and 'bbb
+g.removeVertex('aaa')       # remove the vertex with value 'aaa'
+g.removeEdge('aaa, 'bbb')   # remove the edge between the specified vertices
+g.search('ccc')             # return True if a vertix with value 'ccc exists, False otherwise
+g.hasEdge('aaa','ccc')      # return True if there is an edge between the specified vertices, False otherwise
+
 ```
 
 (c) 2018 STEVE FINCH. All rights reserved.

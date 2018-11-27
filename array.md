@@ -28,12 +28,12 @@ It is not as good as \[what] \[why].
 
 ```
 a = Array()
-a[7]            # access the value at index 7
+a[7]            # return the value at index 7
 a[3] = 1        # change the value at index 3 to 1
 a.append(3)     # add the value 3 to the end of the array
-a.insert(0, 5)  # insert the value 5 to the beginning of the array
-del a[4]        # remove the iteam at index 4
-a.index(6)      # find the index that contains the value 6
+a.insert(0, 5)  # insert the value 5 to the beginning of the array !!!Note:O(n)!!!
+del a[4]        # remove the item at index 4 !!!Note:O(n)!!!
+a.index(6)      # find the index that contains the value 6 !!!Note:O(n)!!!
 ```
 
 (c) 2018 STEVE FINCH. All rights reserved.

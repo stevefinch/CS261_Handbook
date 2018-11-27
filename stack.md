@@ -29,7 +29,7 @@ It is not as good as \[what] \[why].
 ```
 s = Stack()
 s.push(4)             # add the value 4 to the stack
-s.pop()               # return and remove the value on the top of the stack
+s.pop()               # remove and return the value on the top of the stack
 s.peek()              # return the value on the top of the stack, leaving the value on the stack
 ```
 

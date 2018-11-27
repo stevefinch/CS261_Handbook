@@ -27,9 +27,13 @@ It is not as good as \[what] \[why].
 # Example
 
 ```
-sample code showing creation, and exercising all of the operations
-or
-a program that doesn't use the structure, and then a version that does
+bst = BinarySearchTree()
+bst.insert(7)         # insert a node with value 7 into the tree
+bst.delete(4)         # delete the node with value 4 from the tree
+bst.search(6)         # return True if a node with value 6 exists in the tree, False otherwise
+bst.pre_order()       # return a list of nodes in pre-order (root, left, right)
+bst.in_order()        # return a list of nodes in order (left, root, right)
+bst.post_order()      # return a list of nodes in post-order (left, right, root)
 ```
 
 (c) 2018 STEVE FINCH. All rights reserved.

@@ -27,8 +27,12 @@ It is not as good as \[what] \[why].
 # Example
 
 ```
-sample code showing creation, and exercising all of the operations
-
+l = LinkedList()
+l.access(4)           # return the value of the 4th node in the list
+l.append('rat')       # add a node with value 'rat' to the end of the list
+l.insert(3,'cat')     # add a node with value 'cat' to the list after the 3rd node
+l.delete(5)           # delete the 5th node from the list
+l.find('bird')        # return the index of the node with value 'bird'
 ```
 
 (c) 2018 Steve Finch. All rights reserved.

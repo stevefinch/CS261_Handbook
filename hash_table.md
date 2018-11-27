@@ -27,9 +27,10 @@ It is not as good as \[what] \[why].
 # Example
 
 ```
-sample code showing creation, and exercising all of the operations
-or
-a program that doesn't use the structure, and then a version that does
+h = HastTable()
+h.insert('abc', 14)   # insert an entry with key 'abc' and value 14
+h.delete('def')       # delete theentry with key 'def'
+h.search('ghi')       # return the value that corresponds to key 'ghi'
 ```
 
 (c) 2018 STEVE FINCH. All rights reserved.

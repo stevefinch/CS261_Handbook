@@ -27,9 +27,10 @@ It is not as good as \[what] \[why].
 # Example
 
 ```
-sample code showing creation, and exercising all of the operations
-or
-a program that doesn't use the structure, and then a version that does
+p = PriorityQueue()
+p.insert(7)           # add the value 7 to the queue
+p.pop()               # remove and return the minimum value (if Min Heap, max for Max Heap)
+p.peek()              # return the minimum value (if Min Heap, max for Max Heap), leaving value in the queue
 ```
 
 (c) 2018 STEVE FINCH. All rights reserved.
