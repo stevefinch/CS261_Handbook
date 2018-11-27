@@ -9,11 +9,16 @@ employer care?).
 
 ## The List
 
+* [Stack](stack.md)
+* [Queue](queue.md)
+* [Deque](deque.md)
 * [Array](array.md)
+* [Tuple](tuple.md)
 * [Linked List](linked_list.md)
-* Set
-* Tuple
-* Dictionary
-* TODO (more structures listed here)
+* [Tree](tree.md)
+* [Heap](heap.md)
+* [Priority Queue](priority_queue.md)
+* [Hash Table](hast_table.md)
+* [Graph](graph.md)
 
 (c) Steve Finch. All rights reserved.
