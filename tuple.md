@@ -1,6 +1,6 @@
 # Tuple
 
-A tuple is \[describe in very simple terms\].
+A tuple is python  data structure which is an immutible array.
 
 # In Memory
 

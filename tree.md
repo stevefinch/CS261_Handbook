@@ -1,6 +1,6 @@
 # Tree
 
-A tree is \[describe in very simple terms\].
+A tree is non-linear data structure where data items (nodes) are stored with relationships between parent and child nodes. A particulary useful type of tree is a binary tree, where each node can have up to two children. A particulary useful type of binary tree is a binary search tree, where nodes are inserted in a pattern that makes searching efficient. Another useful type of binary tree is the binary heap, which is decribed on the [binary heap](binary_heap.md) page.
 
 # In Memory
 

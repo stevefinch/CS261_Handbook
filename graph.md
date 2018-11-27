@@ -1,6 +1,6 @@
 # Graph
 
-An graph is \[describe in very simple terms\].
+An graph is non-linear data structure that is composed of vertices (data items) and edges (connections between nodes).
 
 # In Memory
 

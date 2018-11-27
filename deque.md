@@ -1,6 +1,6 @@
 # Deque
 
-An deque is \[describe in very simple terms\].
+An deque is a double ended queue. It allos efficient access to the data item at either end of the structure.
 
 # In Memory
 

@@ -1,6 +1,6 @@
 # Heap
 
-A binary heap is \[describe in very simple terms\].
+A binary heap is binary tree with data stored in a manner to provide efficeint retrieval of the minimum/maximum data value (for a Min Heap/Max Heap respectively).
 
 # In Memory
 

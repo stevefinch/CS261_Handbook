@@ -1,6 +1,6 @@
 # Queue
 
-An queue is \[describe in very simple terms\].
+An queue is an ordered data structure which allows efficient access to data items in a First-In-First-Out manner.
 
 # In Memory
 

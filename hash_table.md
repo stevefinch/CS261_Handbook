@@ -1,6 +1,6 @@
 # Hash Table
 
-A hash table is \[describe in very simple terms\].
+A hash table is a non-linear data structure that allows efficient search and retrieval of data items based on lookup keys (like a dictionary of words lets you look up definitions).
 
 # In Memory
 

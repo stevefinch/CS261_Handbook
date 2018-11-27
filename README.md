@@ -4,7 +4,7 @@ by STEVE FINCH
 
 This is a summary of the data structures I have mastered. A data structure is a description of a data storage
 container which provides both a description of the data and of the operations allowed when using the data. The
-user of the data structure should not need to be concerned with the actual implementation of the data structure.
+user of the data structure should not need to be concerned with the actual implementation.
 They only need to be concerned with the operations provided by the data structure and the effienciecy of those
 operations relative to other data structures.
 

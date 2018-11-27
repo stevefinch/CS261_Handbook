@@ -1,6 +1,6 @@
 # Stack
 
-A stack is \[describe in very simple terms\].
+A stack is an ordered data structure which allows efficient access to data items in a Last-In-First-Out manner.
 
 # In Memory
 

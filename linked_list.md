@@ -1,6 +1,6 @@
 # Linked List
 
-A linked list is \[describe in very simple terms\].
+A linked list is linear data structure composed of data items called nodes which can be traversed in order in one direction (for a singly linked list) or in both directions (for a doubly linked list)..
 
 # In Memory
 
