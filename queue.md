@@ -27,9 +27,9 @@ It is not as good as \[what] \[why].
 # Example
 
 ```
-sample code showing creation, and exercising all of the operations
-or
-a program that doesn't use the structure, and then a version that does
+q = Queue()
+q.enqueue(7)          # place the value 7 in the queue
+q.dequeue(7)          # return and remove the oldest value from the queue
 ```
 
-(c) 2018 YOUR NAME. All rights reserved.
+(c) 2018 STEVE FINCH. All rights reserved.

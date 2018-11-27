@@ -27,9 +27,12 @@ It is not as good as \[what] \[why].
 # Example
 
 ```
-sample code showing creation, and exercising all of the operations
-or
-a program that doesn't use the structure, and then a version that does
+t = (1,2,3)
+v = t[0]              # retrieve value at index 0    
+N/A                   # insert not allowed
+N/A                   # delete not allowed
+N/A                   # change not allowed
+t.index(2)            # find the index that contains the value 2
 ```
 
-(c) 2018 YOUR NAME. All rights reserved.
+(c) 2018 STEVE FINCH. All rights reserved.

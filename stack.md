@@ -27,9 +27,10 @@ It is not as good as \[what] \[why].
 # Example
 
 ```
-sample code showing creation, and exercising all of the operations
-or
-a program that doesn't use the structure, and then a version that does
+s = Stack()
+s.push(4)             # add the value 4 to the stack
+s.pop()               # return and remove the value on the top of the stack
+s.peek()              # return the value on the top of the stack, leaving the value on the stack
 ```
 
-(c) 2018 YOUR NAME. All rights reserved.
+(c) 2018 STEVE FINCH. All rights reserved.

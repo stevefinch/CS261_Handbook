@@ -28,14 +28,12 @@ It is not as good as \[what] \[why].
 
 ```
 a = Array()
-value = a[7]    # access the value at index 7
+a[7]            # access the value at index 7
+a[3] = 1        # change the value at index 3 to 1
 a.append(3)     # add the value 3 to the end of the array
 a.insert(0, 5)  # insert the value 5 to the beginning of the array
 del a[4]        # remove the iteam at index 4
 a.index(6)      # find the index that contains the value 6
-
-
-
 ```
 
-(c) 2018 YOUR NAME. All rights reserved.
+(c) 2018 STEVE FINCH. All rights reserved.

@@ -27,9 +27,11 @@ It is not as good as \[what] \[why].
 # Example
 
 ```
-sample code showing creation, and exercising all of the operations
-or
-a program that doesn't use the structure, and then a version that does
+d = Deque()
+d.append(1)           # put the value 1 at the end of the deque
+d.appendleft(2)       # put the value 2 at the beginning of the deque
+d.pop()               # return and remove the value at the end of the deque 
+d.popleft()       # return and remove the value at the beginning of the deque
 ```
 
-(c) 2018 YOUR NAME. All rights reserved.
+(c) 2018 STEVE FINCH. All rights reserved.
