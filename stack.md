@@ -1,6 +1,6 @@
-# Array
+# Stack
 
-An array is \[describe in very simple terms\].
+A stack is \[describe in very simple terms\].
 
 # In Memory
 

@@ -1,6 +1,6 @@
-# Array
+# Heap
 
-An array is \[describe in very simple terms\].
+An heap is \[describe in very simple terms\].
 
 # In Memory
 

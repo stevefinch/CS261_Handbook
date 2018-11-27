@@ -1,6 +1,6 @@
-# Array
+# Tuple
 
-An array is \[describe in very simple terms\].
+A tuple is \[describe in very simple terms\].
 
 # In Memory
 

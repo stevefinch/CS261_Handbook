@@ -1,6 +1,6 @@
-# Array
+# Deque
 
-An array is \[describe in very simple terms\].
+An deque is \[describe in very simple terms\].
 
 # In Memory
 

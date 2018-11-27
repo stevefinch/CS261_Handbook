@@ -1,6 +1,6 @@
-# Array
+# Priority Queue
 
-An array is \[describe in very simple terms\].
+An priority queue is \[describe in very simple terms\].
 
 # In Memory
 

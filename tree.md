@@ -1,6 +1,6 @@
-# Array
+# Tree
 
-An array is \[describe in very simple terms\].
+A tree is \[describe in very simple terms\].
 
 # In Memory
 

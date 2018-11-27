@@ -1,6 +1,6 @@
-# Array
+# Queue
 
-An array is \[describe in very simple terms\].
+An queue is \[describe in very simple terms\].
 
 # In Memory
 

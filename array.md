@@ -27,9 +27,15 @@ It is not as good as \[what] \[why].
 # Example
 
 ```
-sample code showing creation, and exercising all of the operations
-or
-a program that doesn't use the structure, and then a version that does
+a = Array()
+value = a[7]    # access the value at index 7
+a.append(3)     # add the value 3 to the end of the array
+a.insert(0, 5)  # insert the value 5 to the beginning of the array
+del a[4]        # remove the iteam at index 4
+a.index(6)      # find the index that contains the value 6
+
+
+
 ```
 
 (c) 2018 YOUR NAME. All rights reserved.

@@ -1,6 +1,6 @@
-# Array
+# Hash Table
 
-An array is \[describe in very simple terms\].
+A hash table is \[describe in very simple terms\].
 
 # In Memory
 

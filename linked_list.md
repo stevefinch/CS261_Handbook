@@ -1,6 +1,6 @@
 # Linked List
 
-An linked list is \[describe in very simple terms\].
+A linked list is \[describe in very simple terms\].
 
 # In Memory
 

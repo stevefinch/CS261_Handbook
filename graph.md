@@ -1,6 +1,6 @@
-# Array
+# Graph
 
-An array is \[describe in very simple terms\].
+An graph is \[describe in very simple terms\].
 
 # In Memory
 
