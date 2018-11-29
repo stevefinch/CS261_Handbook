@@ -24,9 +24,9 @@ An array supports the following operations:
 
 # Use Cases
 
-An array is useful \[when\] \[why\].
+An hash table is useful when values can be associated with keys and then stored or retrived using the keys
 
-It is not as good as \[what] \[why].
+It is not as good as an array if the data can be rerived using an index, because you don't have the overhead of the hashing function.
 
 # Example
 

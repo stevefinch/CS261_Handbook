@@ -25,7 +25,7 @@ An array supports the following operations:
 
 # Use Cases
 
-An array is useful \[when\] \[why\].
+An deque is useful for scheduling operations. Imagine a VIP line and a normal line for airport checkin. When a new passenger arrives thay can be added to the back of the appropriate line(like a stack). If either line is empty the first person in the other line can be served (like a queue). A similar sustem is used for computer process scheduling. Both the append and pop operations can be done to either the beginning or end of the line in O(1) time.
 
 It is not as good as \[what] \[why].
 

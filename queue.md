@@ -22,9 +22,9 @@ An array supports the following operations:
 
 # Use Cases
 
-An array is useful \[when\] \[why\].
+An queue is useful when items need to be processed in First-In-First-Out order.
 
-It is not as good as \[what] \[why].
+It is not as good as most other structures if items other than the first-in need to be accessed
 
 # Example
 

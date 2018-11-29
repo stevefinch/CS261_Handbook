@@ -14,17 +14,18 @@ In memory, an array looks like this:
 
 An array supports the following operations:
 
-* **getMin/getMax**: obtain a value stored in the structure at a specific indexed position in the array.
+* **getMin/getMax/pop**: obtain a value stored in the structure at a specific indexed position in the array.
   * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
 * **insert**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
+  * O(log(n)), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
+
 
 
 # Use Cases
 
-An array is useful \[when\] \[why\].
+An heap is useful when a minimum or maximum value (or set of k max/min values) must be accessed efficiently beacuse this can be done in O(1).
 
-It is not as good as \[what] \[why].
+It is not as good as most other structures when access is needed to intermediate values that can be accessed either using an index (array), key (hash table), first or last in (queue or stack).
 
 # Example
 

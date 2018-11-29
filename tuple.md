@@ -17,14 +17,14 @@ An array supports the following operations:
 * **retrieval/access/read**: obtain a value stored in the structure at a specific indexed position in the array.
   * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
 * **index/find**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.  
+  * O(n), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.  
 
 
 # Use Cases
 
-An array is useful \[when\] \[why\].
+Like an array, a tuple is useful when data will be accessed in sequential order, or when data from a specified index must be accessed quickly. This is because any data in the array can be retrieved in O(1) constant time.
 
-It is not as good as \[what] \[why].
+It is not as good as a any other structure when data must be mutable.
 
 # Example
 
