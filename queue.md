@@ -14,10 +14,10 @@ In memory, an array looks like this:
 
 An array supports the following operations:
 
-* **enqueue/insert**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **dequeu/access**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.  
+* **enqueue/insert**: add an item to the queue.
+  * O(1), constant time. If implemented as a linked list add a new node before the first and call it the new first. Does not depend on n.
+* **dequeu/access**: remove and return the oldest item from the queue (FIFO).
+  * O(1), constant time. Remove the first node and call the old second node first. Does not depend on n.
 
 
 # Use Cases

@@ -14,12 +14,12 @@ In memory, an array looks like this:
 
 An array supports the following operations:
 
-* **insert**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **delete**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **search**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.    
+* **insert**: add a key/value pair to the structure.
+  * O(1), constant time. Put the key into the hash function (does not depend on n). Place the value from the location pointed at by the return from the hash function. O(1) like an array assigment. Even with a collision you may need to add the key/value to a list, but this is also constant time with respect to n, so still O(1) in total.
+* **delete**: remove the key/value pair with a specified key from the structure.
+  * O(1), constant time. Same as insert. Even with a collision you may need to search through a list to remove an entry, but the list is short wrt n so still O(1) in total.
+* **search**: Return the value related to a specified key.
+  * O(1), constant time.  Same as insert. Even with a collision you may need to search through a list, but this is also constant time with respect to n, so still O(1) in total.
 
 
 # Use Cases

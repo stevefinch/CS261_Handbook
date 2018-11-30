@@ -12,18 +12,19 @@ In memory, an array looks like this:
 
 # Operations
 
-An array supports the following operations:
+The operations described here are for a binary search tree, a particular type of tree. Other type of trees can have differecnt algorithmic complexities.
 
-* **insert**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(log(n)), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **delete**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(log(n)), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.  
-* **search**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1log(n), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.  
-* **traverse**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(n), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.  
+A binary search tree supports the following operations:
 
-* name: description, Big O efficiency, and explain why / what that means
+* **insert**: add a new value to the tree.
+  * O(log(n)), log time. Assuming a balanced tree ther can be as many comparisons as the height of the tree, or log(n). A worst case unbalanced tree is the same as a linked list, which would be O(n)
+* **delete**: remove a value from the tree.
+  * O(log(n)), log time.  Same as insert Assuming a balanced tree ther can be as many comparisons as the height of the tree, or log(n). A worst case unbalanced tree is the same as a linked list, which would be O(n). Depending on whether the deleted node is a leaf, an only child, or a double child will change the total number of operations, but doesn't depend on n, so the total is still O(log(n))
+* **search**: find if a value exists in the tree. Return boolean True if found.
+  * O(log(n), log time.Assuming a balanced tree, each search eliminates half the tree. This makes search O(log(n). Worst case is iterating through a linked list or O(n)
+* **traverse**: list all of the values in the tree.
+  * O(n), linear time. One vist to each node so O(n)
+
 
 # Use Cases
 

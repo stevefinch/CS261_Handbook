@@ -4,26 +4,26 @@ A linked list is linear data structure composed of data items called nodes which
 
 # In Memory
 
-In memory, an array looks like this:
+In memory, alinked list looks like this:
 
-![Image of Array in Memory](images/array_memory.png)
+![Image of Linked List in Memory](images/linkedlist.png)
 
 \[description of diagram\]
 
 # Operations
 
-An array supports the following operations:
+A linked list supports the following operations:
 
 * **access/read**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **append**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **insert**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **delete**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **find**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(n), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.        
+  * O(n), linear time. To access the value at a given position iterate through the list to the desired index. Worst case will be the length of the list, Average case will be halfway through the list. This makes the complexity O(n)
+* **append**: add a value to the end of the list.
+  * O(1), constant time. Assuming either a pointer to last of doubly linked with first's prior pointing to last
+* **insert**: add a value to the list after the specified index.
+  * O(n) or O(1), linear or constant time. Iterate through the list until the desired index. n/2 steps on average so O(n). The actual insert is O(1) because you only have to reset the prior/next pointers on the nodes before and after the insert.
+* **delete**: remove the value at at a specific indexed position.
+  * O(n) or O(1), linear or constant time. Same as insert.
+* **find**: search for a specified value and return its index.
+  * O(n), linear time. Assuming an unordered list iterate through the list until the desired value is found. On average n/2 steps so O(n)
 
 # Use Cases
 

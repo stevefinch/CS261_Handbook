@@ -14,14 +14,14 @@ In memory, an array looks like this:
 
 An array supports the following operations:
 
-* **append/enqueue**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **appendleft**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **pop**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **popleft**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.      
+* **append/enqueue**: store a value at the end of the deque.
+  * O(1), constant time. If the deque is implemented as a circularly doubly linked list this is simply adding a node between the last node and the first node. 
+* **appendleft**: store a value in the first position of the deque.
+  * O(1), constant time. If the deque is implemented as a circularly doubly linked list this is simply adding a node between the first node and the last node and marking it as the new first.
+* **pop**: return the value stored in the last position and remove from the deque.
+  * O(1), constant time. If the deque is implemented as a circularly doubly linked list this is simply backing up one from the first node, removing and returning the value, and relinking the next to last to the first. 
+* **popleft**: return the value stored in the first position and remove from the deque.
+  * O(1), constant time. Remove and return the first node. Link the last node to the seond node and mark the second as the new first.
 
 # Use Cases
 

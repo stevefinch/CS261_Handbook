@@ -14,11 +14,10 @@ In memory, an array looks like this:
 
 An array supports the following operations:
 
-* **getMin/getMax/pop**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **insert**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(log(n)), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-
+* **getMin/getMax/pop**: return the minimum value stored in the structure (max for Max Heap).
+  * O(1), constant time to return the value. O(log(n)) to pop the value (return and also delete). GetMin is simply return the root of the heap so O(1). For pop when the root is removed the last leaf is moved to the root. Then bubble down is used to move it to the correct position. The height of the heap is log(n) so bubble down will might have log(n) swaps which makes the complexity O(log(n))
+* **insert**: add a a value the structure
+  * O(log(n)), constant time. The new value is placed in the first open leaf on the last row. Then bubble up is used to put it into the correct location. This could be as many as log(n) swaps, so the complexity is O(log(n)).
 
 
 # Use Cases

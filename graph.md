@@ -14,18 +14,18 @@ In memory, an array looks like this:
 
 An array supports the following operations:
 
-* **addVertex/insert**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **addEdge/insert**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **removeVertex/delete**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(|V|+|E|), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **removeEdge/delete**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(|E|), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **search**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(|V|), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **hasEdge**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(|E|), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.          
+* **addVertex/insert**: add a node to the graph.
+  * O(1), constant time. Append a new entry to the set of vertices. O(1) just like insert to a hash table.
+* **addEdge/insert**: add an edge to the graph. An edge is a connection between two nodes
+  * O(1), constant time. retrieve the two nodes from the set of vertices (O(1)). Append the edeg to both of the nodes adjancey lists also O(1).
+* **removeVertex/delete**: remove the vertex with a specified value from a graph, along with it's edges.
+  * O(|V|), linear time wrt number of edges. Retrive adjacency list for the vertex. For each edge in the adjacency list retrive the adjacency list for the vertex at the other end of the egse and remove this vertex from the list. The number of edges can be as many as |V|-1, which makes this operation O(|V|)
+* **removeEdge/delete**: remove an edge from the graph.
+  * O(|V|), linear time wrt number of vertices. For each vertex retrieve adjacency list and loop over the list to find and remove the edge. The number of edges in each of the two adjacency lists can be as many as |V|-1, which makes this operation O(|V|)
+* **search**: find a value stored in a node of the graph. Return boolean True if found, False otherwise.
+  * O(|V|+|E|), linear time. Assuming we don't have a specialized graph type like a bst, we will have to traverse through the graph until we find the value. Both breadth first and depth first traversals are O(|V|+|E|).
+* **hasEdge**: check if an edge exists between two specified nodes. Return boolean True if found, False otherwise..
+  * O(|V|+|E|), linear time. Search for vertex 1 O(|V|+|E|). Then check its adjacency list and remove the edge.
 
 
 # Use Cases

@@ -16,14 +16,14 @@ An array supports the following operations:
 
 * **retrieval/access/read**: obtain a value stored in the structure at a specific indexed position in the array.
   * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **append**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **insert**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(n), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **delete**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(n), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **search/index**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(n), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
+* **append**: store a value in the array in next position after the last item.
+  * O(1), constant time. An array can keep a pointer to the end of the array. After this pointer is incrmented place the new value at this position. This is an O(1) constant time operation.
+* **insert**: store a value anywhere except last.
+  * O(n), linear time. Every data item to the right of the desired index must be moved one to the right, to make space for the new item in the middle of the array. This will take on average n/2 moves, which make this an O(n) operation.
+* **delete**: delete a value stored anwwhere in the structure
+  * O(n), linear time. Similar to insert. Every item to the right must be shifted one to the left to keep the array contigouous.
+* **search/index**: find the index of a value in the array.
+  * O(n), constant time. Assuming an unsorted array each item must be accessed until the match is found. On average this will be n/2 items, which makes this operation O(n)
 
 # Use Cases
 

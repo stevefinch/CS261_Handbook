@@ -14,12 +14,12 @@ In memory, an array looks like this:
 
 An array supports the following operations:
 
-* **push/insert**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **pop/retrieval/access**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
-* **peek**: obtain a value stored in the structure at a specific indexed position in the array.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.    
+* **push/insert**: add an item to the stack.
+  * O(1), constant time. Assuming you have a poniter to last add the new item to where last points. Increment pointer.
+* **pop/retrieval/access**: return and remove the newest item add to the stack.
+  * O(1), constant time. return item pointed to by last pointer. decrement pointer.
+* **peek**: return the newest item add to the stack, leaving it on the stack.
+  * O(1), constant time. return item pointed to by last pointer. do not change pointer.
 
 # Use Cases
 
