@@ -6,7 +6,7 @@ An deque is a double ended queue. It allos efficient access to the data item at 
 
 In memory, an array looks like this:
 
-![Image of Array in Memory](images/array_memory.png)
+![Image of Linked List in Memory](images/linkedlist.png)
 
 \[description of diagram\]
 

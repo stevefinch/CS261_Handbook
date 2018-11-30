@@ -8,7 +8,7 @@ In memory, an array looks like this:
 
 ![Image of Array in Memory](images/array_memory.png)
 
-\[description of diagram\]
+The memory locations for the array elements are sequential, which allows the efficient access. The memory locations can hold either the values themselves or pointers to objects which are stored seperately.
 
 # Operations
 

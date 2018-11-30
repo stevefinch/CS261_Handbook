@@ -4,7 +4,7 @@ A linked list is linear data structure composed of data items called nodes which
 
 # In Memory
 
-In memory, alinked list looks like this:
+In memory, a linked list looks like this:
 
 ![Image of Linked List in Memory](images/linkedlist.png)
 
