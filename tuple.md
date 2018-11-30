@@ -8,7 +8,7 @@ In memory, an array looks like this:
 
 ![Image of Array in Memory](images/array_memory.png)
 
-\[description of diagram\]
+A tuple is just an array that cannot be modified, so it looks just like an array in memory.
 
 # Operations
 

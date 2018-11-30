@@ -8,7 +8,7 @@ In memory, a linked list looks like this:
 
 ![Image of Linked List in Memory](images/linkedlist.png)
 
-\[description of diagram\]
+The nodes of a linked list do not need to be contiguous. Each node in this example will use 24 bytes, 8 for the value, 8 for the prior pointer and 8 for the next pointer. the number of nodes is arbitrary.
 
 # Operations
 

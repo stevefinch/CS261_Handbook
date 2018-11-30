@@ -4,11 +4,11 @@ An graph is non-linear data structure that is composed of vertices (data items) 
 
 # In Memory
 
-In memory, an array looks like this:
+In memory, an graph looks like this:
 
-![Image of Array in Memory](images/array_memory.png)
+![Image of Array in Memory](images/hash.png)
 
-\[description of diagram\]
+A graph can be implemented as either an adjacency matrix, for dense graphs, or as an adjacency list for sparse graphs. In memory an adjacency matrix looks a lot like a hast table. there is an array, which holds the vertices, and associated with each vertex is a list of edges in a linked list.
 
 # Operations
 

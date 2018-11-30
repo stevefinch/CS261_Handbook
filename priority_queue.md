@@ -4,22 +4,22 @@ An priority queue is a non-linear data structure which stores data items along w
 
 # In Memory
 
-In memory, an array looks like this:
+In memory, an prority queue looks like this:
 
 ![Image of Array in Memory](images/array_memory.png)
 
-\[description of diagram\]
+A priority queue can be implemented using a heap, with the same layout as described on the heap page. Then the highest priority element will be in element 1.
 
 # Operations
 
-An array supports the following operations:
+An priority queue supports the following operations:
 
 * **insert**: add a value to the queue.
-  * O(log(n)), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
+  * O(log(n)), log time. The new value is placed in the first open leaf on the last row. Then bubble up is used to put it into the correct location. This could be as many as log(n) swaps, so the complexity is O(log(n)).
 * **peek**: return the value of the highest priority item from the queue, leaving it on the queue.
-  * O(1), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.    
+  * O(1), constant time. The highest priority item is located in element 1 of the array, which can be read in constant time.    
 * **pop**: return the value of the highest priority item from the queue, and remove it from the queue.
-  * O(log(n)), constant time. An array variable really just records the base address of the array, so we know the exact memory address of the beginning of the array. We also know the data type of the elements in the array, and therefore the size of each element. Given the index of an element we wish to read, we can calculate the address of that element in *one step*: base address + sizeof(datatype) * index. Since we can calculate this in one step for all values in the array, this is an O(1) constant time operation.
+  * O(log(n)), log time. If the root element is removed, the last element must be placed in the root and then allowed to bubble down to it's proper location. This could involve as many as one swap per level, or O(log(n)).
 
 # Use Cases
 

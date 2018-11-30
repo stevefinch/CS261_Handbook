@@ -4,15 +4,15 @@ An queue is an ordered data structure which allows efficient access to data item
 
 # In Memory
 
-In memory, an array looks like this:
+In memory, an queue looks like this:
 
-![Image of Array in Memory](images/array_memory.png)
+![Image of Linked List in Memory](images/linkedlist.png)
 
-\[description of diagram\]
+A queue can be implmenetd using a linked list. Inserting a new element prepends it between the first element and the last, and updates the variable pointer to point to the new element.
 
 # Operations
 
-An array supports the following operations:
+An queue supports the following operations:
 
 * **enqueue/insert**: add an item to the queue.
   * O(1), constant time. If implemented as a linked list add a new node before the first and call it the new first. Does not depend on n.

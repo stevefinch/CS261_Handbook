@@ -4,11 +4,11 @@ An deque is a double ended queue. It allos efficient access to the data item at 
 
 # In Memory
 
-In memory, an array looks like this:
+In memory, an deque looks like this:
 
 ![Image of Linked List in Memory](images/linkedlist.png)
 
-\[description of diagram\]
+A deque can be implemented by using a linked list. This allows the easy access to bot the first and last node, which characterises a deque.
 
 # Operations
 

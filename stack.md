@@ -4,11 +4,11 @@ A stack is an ordered data structure which allows efficient access to data items
 
 # In Memory
 
-In memory, an array looks like this:
+In memory, a stack looks like this:
 
 ![Image of Array in Memory](images/array_memory.png)
 
-\[description of diagram\]
+A stack can be implmenetd using an array, along with a pointer that points to the last element.
 
 # Operations
 

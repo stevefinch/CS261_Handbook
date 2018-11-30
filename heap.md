@@ -4,11 +4,11 @@ A binary heap is binary tree with data stored in a manner to provide efficeint r
 
 # In Memory
 
-In memory, an array looks like this:
+In memory, a heap looks like this:
 
 ![Image of Array in Memory](images/array_memory.png)
 
-\[description of diagram\]
+A heap can be implemented using an array. Element 0 is unused. Element 1 is the root. Then element 2n and 2n+1 are the left and right child of n, and the parent can be reached by integer division by 2.
 
 # Operations
 
@@ -17,7 +17,7 @@ An array supports the following operations:
 * **getMin/getMax/pop**: return the minimum value stored in the structure (max for Max Heap).
   * O(1), constant time to return the value. O(log(n)) to pop the value (return and also delete). GetMin is simply return the root of the heap so O(1). For pop when the root is removed the last leaf is moved to the root. Then bubble down is used to move it to the correct position. The height of the heap is log(n) so bubble down will might have log(n) swaps which makes the complexity O(log(n))
 * **insert**: add a a value the structure
-  * O(log(n)), constant time. The new value is placed in the first open leaf on the last row. Then bubble up is used to put it into the correct location. This could be as many as log(n) swaps, so the complexity is O(log(n)).
+  * O(log(n)), log time. The new value is placed in the first open leaf on the last row. Then bubble up is used to put it into the correct location. This could be as many as log(n) swaps, so the complexity is O(log(n)).
 
 
 # Use Cases

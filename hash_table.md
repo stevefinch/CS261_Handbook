@@ -1,14 +1,14 @@
 # Hash Table
 
-A hash table is a non-linear data structure that allows efficient search and retrieval of data items based on lookup keys (like a dictionary of words lets you look up definitions).
+A hash table is a non-linear data structure that allows efficient search and retrieval of data items based on lookup keys (like a dictionary of words lets you look up definitions). Python structures that use a hash table are the dictionary to store key/value pairs, and the set, which stores only the keys.
 
 # In Memory
 
-In memory, an array looks like this:
+In memory, an hash table looks like this:
 
-![Image of Array in Memory](images/array_memory.png)
+![Image of Hash Table in Memory](images/hash.png)
 
-\[description of diagram\]
+A hash function is used to determine which index of the array will hold the value. The array must hold as many elements as the number of possible outputs from the hash function. Not all indices in the array need to contain values. In the case of collisions the array can point to a linked list where all keys that map to the same index can be placed in the list.
 
 # Operations
 

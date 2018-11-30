@@ -4,11 +4,11 @@ A tree is non-linear data structure where data items (nodes) are stored with rel
 
 # In Memory
 
-In memory, an array looks like this:
+In memory, an tree looks like this:
 
-![Image of Array in Memory](images/array_memory.png)
+![Image of Linked List in Memory](images/linkedlist.png)
 
-\[description of diagram\]
+A tree can be implmented using a linked list.
 
 # Operations
 
