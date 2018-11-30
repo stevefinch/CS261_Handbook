@@ -26,7 +26,7 @@ item of data.
 * [Tree](tree.md)
 * [Binary Heap](heap.md)
 * [Priority Queue](priority_queue.md)
-* [Hash Table](hast_table.md)
+* [Hash Table](hash_table.md)
 * [Graph](graph.md)
 
 (c) Steve Finch. All rights reserved.

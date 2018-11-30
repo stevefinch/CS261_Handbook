@@ -8,7 +8,7 @@ In memory, a stack looks like this:
 
 ![Image of Array in Memory](images/array_memory.png)
 
-A stack can be implmenetd using an array, along with a pointer that points to the last element.
+A stack can be implemenetd using an array, along with a pointer that points to the last element.
 
 # Operations
 
